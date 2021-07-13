@@ -4,7 +4,7 @@ orbs:
   windows: circleci/windows@2.4.0
 
 jobs:
-  build:  
+  buildit:  
     executor:
       name: windows/default
     steps:
@@ -18,4 +18,4 @@ jobs:
 workflows:
   build: 
     jobs:
-      - build
+      - buildit
