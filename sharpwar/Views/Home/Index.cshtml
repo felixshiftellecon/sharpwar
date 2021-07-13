@@ -1,0 +1,10 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model Deck
+<div class="list">
+    @foreach (Card card in Model.Cards)
+            {
+    <p>@card.FaceValue of @card.Suit</p>
+            }
+</div>
